@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalukulator</title>
+</head>
+
+<body>
+    <script>
+        var angka1 = prompt("Masukkan Angka 1");
+        var angka2 = prompt("Masukkan Angka 2");
+        var operasi = prompt("Tambah Kurang Kali Bagi");
+
+        var hasilTambah = Number(angka1) + Number(angka2);
+        var hasilKurang = Number(angka1) - Number(angka2);
+        var hasilKali = Number(angka1) * Number(angka2);
+        var hasilBagi = Number(angka1) / Number(angka2);
+
+        if (operasi == "Tambah") {
+            document.write("<h3>Penambahan</h3>");
+            document.write(`${angka1} ditambah ${angka2} = ${hasilTambah}`);
+        } else if (operasi == "Kurang") {
+            document.write("<h3>Pengurangan</h3>");
+            document.write(`${angka1} dikurang ${angka2} = ${hasilKurang}`);
+        } else if (operasi == "Kali") {
+            document.write("<h3>Perkalian</h3>");
+            document.write(`${angka1} di kali ${angka2} = ${hasilKali}`);
+        } else if (operasi == "Bagi") {
+            document.write("<h3>Pembagian</h3>");
+            document.write(`${angka1} di bagi ${angka2} = ${hasilBagi}`);
+        } else {
+            document.write("Operator yang anda pilih tidak tersedia");
+        }
+    </script>
+</body>
+
+</html>
